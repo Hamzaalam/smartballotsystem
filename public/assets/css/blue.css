@@ -1,0 +1,11 @@
+	/*----*****---- << Headings >> ----*****----*/
+	
+	#home .main-title { background:url(../images/blue/title-border.png) center bottom no-repeat; }
+
+		/*----*****---- << Home >> ----*****----*/
+		
+		#home { background:#257a2f center bottom repeat; }
+
+		.rounded-icon span { border:5px solid #f2f5f7; }
+
+		#footer { background:#1d6845 ; }		
