@@ -14,7 +14,7 @@
              </div>
                <form>
                  <div class="input-group">                    
-                   <input type="text" maxlength="13" id="cnic" onkeypress="return isNumberKey(event)" pattern="^[0-9+]{5}[0-9+]{7}[0-9]{1}$" name="cnic" class="form-control" name="cnic" placeholder="CNIC NUMBER" aria-describedby="basic-addon1" required>                           
+                   <input type="text" maxlength="13" id="cnic" onkeypress="return isNumberKey(event)" pattern="^[0-9+]{5}[0-9+]{7}[0-9]{1}$" name="cnic" class="form-control" name="cnic" placeholder="CNIC NUMBER" aria-describedby="basic-addon1" required />                           
                  </div>
                     <div class="text-center">
                     <input type="button" onclick="postCnic()" name="next" class="btn btn-success btn-submit" value="Next">
@@ -32,6 +32,10 @@
      <script>
        function postCnic(){
           const cnicInput = document.querySelector('#cnic').value;
+          if(cnicInput === ''){
+            $.alert('Please Provide An Input To Start');
+            return false;
+          }
           location.href = root + 'cnicPost/'+ cnicInput;
        }
 

@@ -33,10 +33,16 @@
 			    
 			        </div>
 			 
-			        <button type="button" id="btnSuccess" class="btn btn-primary" onclick="goToDetails()">FINGER MATCHED</button>
+			        <button type="button" id="btnSuccess" class="btn btn-primary" onclick="redirect()">FINGER MATCHED</button>
 			    </div>
 		    </div>
 		</form>  	 
      </div>                                                   
   </article><!-- **Home Content - End** -->
+
+  <script>
+      function redirect(){
+        location.href = root + 'details';
+      }
+  </script>
 @endsection

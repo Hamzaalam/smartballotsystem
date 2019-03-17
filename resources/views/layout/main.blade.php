@@ -37,7 +37,7 @@
     <body>
     
       @yield('content');
-
+ 
       @if ($showHeader)
         <div id="header1">
             <div class="container">

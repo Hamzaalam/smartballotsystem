@@ -79,67 +79,67 @@
   function alertName(name) {
     switch (name) {
       case 'cb1':
-        alert("You Have Selected 'پاکستان تحريک انصاف' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'پاکستان تحريک انصاف' For Provincial Assembly of Sindh");
         break;
 
       case 'cb2':
-        alert("You Have Selected 'پاکِستان پیپلز پارٹی‬‎' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'پاکِستان پیپلز پارٹی‬‎' For Provincial Assembly of Sindh");
         break;
 
        case 'cb3':
-        alert("You Have Selected 'پاکستان مسلم لیگ ن' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'پاکستان مسلم لیگ ن' For Provincial Assembly of Sindh");
         break;
 
        case 'cb4':
-        alert("You Have Selected 'جميعت علماء پاکستان' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'جميعت علماء پاکستان' For Provincial Assembly of Sindh");
         break;
 
        case 'cb5':
-        alert("You Have Selected 'پاکستان مسلم لیگ ق' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'پاکستان مسلم لیگ ق' For Provincial Assembly of Sindh");
         break;
 
        case 'cb6':
-        alert("You Have Selected 'جمیعت علمائے اسلام ف' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'جمیعت علمائے اسلام ف' For Provincial Assembly of Sindh");
         break;
 
        case 'cb7':
-        alert("You Have Selected 'متحدہ قومی موومنٹ‬ پاکِستان' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'متحدہ قومی موومنٹ‬ پاکِستان' For Provincial Assembly of Sindh");
         break;
 
        case 'cb8':
-        alert("You Have Selected 'عوامی نيشنل پارٹی' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'عوامی نيشنل پارٹی' For Provincial Assembly of Sindh");
         break;
 
        case 'cb9':
-        alert("You Have Selected 'پاکستان مسلم لیگ ف' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'پاکستان مسلم لیگ ف' For Provincial Assembly of Sindh");
         break;
 
         case 'cb10':
-        alert("You Have Selected 'پاک سر زمین پارٹی‬‎' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'پاک سر زمین پارٹی‬‎' For Provincial Assembly of Sindh");
         break;
 
         case 'cb11':
-        alert("You Have Selected 'پاکستان عوامی تحريک' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'پاکستان عوامی تحريک' For Provincial Assembly of Sindh");
         break;
 
         case 'cb12':
-        alert("You Have Selected 'عوامی ورکرز پارٹی' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'عوامی ورکرز پارٹی' For Provincial Assembly of Sindh");
         break;
 
         case 'cb13':
-        alert("You Have Selected 'تحریک لبیک پاکستان' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'تحریک لبیک پاکستان' For Provincial Assembly of Sindh");
         break;
 
         case 'cb14':
-        alert("You Have Selected 'بلوچستان نيشنل پارٹی' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'بلوچستان نيشنل پارٹی' For Provincial Assembly of Sindh");
         break;
 
         case 'cb15':
-        alert("You Have Selected 'پشتونخوا ملی عوامی پارٹی‬' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'پشتونخوا ملی عوامی پارٹی‬' For Provincial Assembly of Sindh");
         break;
 
         case 'cb16':
-        alert("You Have Selected 'پاکستان گرین پارٹی‎' For Provincial Assembly of Sindh");
+        $.alert("You Have Selected 'پاکستان گرین پارٹی‎' For Provincial Assembly of Sindh");
         break;
 
 
