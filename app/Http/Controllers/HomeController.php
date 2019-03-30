@@ -47,6 +47,7 @@ class HomeController extends Controller
             'naConst' => $voter['NA_CONSTITUENCY'],
             'psConst' => $voter['PS_CONSTITUENCY'],
             'voted' => $voter['VOTED'],
+            'fingerPrint' => $voter['FINGERPRINT'],
             );
 
             // Creating Session
@@ -60,13 +61,15 @@ class HomeController extends Controller
         }
     }
     public function biometric(Request $request){
+        $voter = $request->session()->get('user');
 
-        if(!$request->session()->get('user'))
+        if(!$voter = $request->session()->get('user'))
             return redirect()->action('HomeController@getCnic');
 
         $data = array(
             'header' => 'BIOMETRIC AUTHENTICATION',
-            'showHeader' => false
+            'showHeader' => false,
+            'voter'=> $voter
         );
         return view('biometric')->with($data);
     }
@@ -84,7 +87,10 @@ class HomeController extends Controller
             'voter'=> $voter
         );
         return view('getDetails')->with($data);
+        //return view('biometric')->with($data);
+
     }
+    
     public function NABallot(Request $request){
 
         if(!$request->session()->get('user'))

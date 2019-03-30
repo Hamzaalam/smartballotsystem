@@ -55,9 +55,14 @@ function ErrorCodeToString(ErrorCode) {
     }
 
     var template_1 = "";
-    var template_2 = "";
+    var template_2 = document.getElementsByName('f_template2').value;
+    alert(template_2);
 
     function SuccessFunc1(result) {
+        var x = document.getElementById('f_template2').value;
+        alert(x);
+        // template_2 =  document.querySelector('#f_template2').value;
+        // console.log(template_2);
         if (result.ErrorCode == 0) {
             /* 	Display BMP data in image tag
                 BMP data is in base 64 format 
@@ -67,13 +72,20 @@ function ErrorCodeToString(ErrorCode) {
             }
             template_1 = result.TemplateBase64;
             
-            document.getElementById('f_template').innerHTML = template_1;
+            //document.getElementById('f_template').innerHTML = template_1;
 
-            console.log(template_1);
+            //console.log(template_1);
         }
         else {
             alert("Fingerprint Capture Error Code:  " + result.ErrorCode + ".\nDescription:  " + ErrorCodeToString(result.ErrorCode) + ".");
         }
+
+        // var finger = document.getElementById('f_template2').value;
+        // if(finger){
+        //     template_2 = finger;
+        
+        //     console.log(template_2);
+        // }
     }
 
     function ErrorFunc(status) {
@@ -109,21 +121,24 @@ function ErrorCodeToString(ErrorCode) {
     }
 
     function SuccessFunc2(result) {
-        if (result.ErrorCode == 0) {
-            /* 	Display BMP data in image tag
-                BMP data is in base 64 format 
-            */
-            if (result != null && result.BMPBase64.length > 0) {
-                document.getElementById('FPImage2').src = "data:image/bmp;base64," + result.BMPBase64;
-            }
-            template_2 = result.TemplateBase64;
-        }
-        else {
-            alert("Fingerprint Capture Error Code:  " + result.ErrorCode + ".\nDescription:  " + ErrorCodeToString(result.ErrorCode) + ".");
-        }
+        
+        // if (result.ErrorCode == 0) {
+        //     /* 	Display BMP data in image tag
+        //         BMP data is in base 64 format 
+        //     */
+        //     if (result != null && result.BMPBase64.length > 0) {
+        //         document.getElementById('FPImage2').src = "data:image/bmp;base64," + result.BMPBase64;
+        //     }
+        //     template_2 = result.TemplateBase64;
+            
+        // }
+        // else {
+        //     alert("Fingerprint Capture Error Code:  " + result.ErrorCode + ".\nDescription:  " + ErrorCodeToString(result.ErrorCode) + ".");
+        // }
     }
 
     function matchScore(succFunction, failFunction) {
+        
         if (template_1 == "" || template_2 == "") {
             alert("Please scan two fingers to verify!!");
             return;

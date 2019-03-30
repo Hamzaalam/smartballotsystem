@@ -102,14 +102,12 @@ class AdminController extends Controller
         return view('candidate')->with('candidates', $candidates);
     }
 
-    public function voter(Request $request){
-
+    public function voter(Request $request)
+    {
         if(!$request->session()->get('admin'))
             return redirect()->action('AdminController@login');
-
-        $voters = Voter::all();
-
-        return view('voter')->with('voters', $voters);
+            $voters = Voter::all();
+            return view('voter')->with('voters', $voters);
     }
 
     public function addVoterForm(Request $request){
@@ -152,8 +150,7 @@ class AdminController extends Controller
 
         if(!$request->session()->get('admin'))
             return redirect()->action('AdminController@login');
-
-        return view('result');
+            return view('result');
     }
 
     public function logout(Request $request){
